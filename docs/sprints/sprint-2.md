@@ -40,3 +40,32 @@ Validar y consolidar el flujo principal de ReservaFácil para permitir que un us
 ## Entregable
 
 Flujo de reservación funcional y validado, incluyendo consulta y cancelación de reservas.
+
+## Resultados de las pruebas
+
+Se realizaron pruebas sobre el flujo principal de reservaciones.
+
+| ID | Caso de prueba | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---|---|---|
+| CP-07 | Crear reservación válida | La reservación debe registrarse correctamente | La reservación fue creada correctamente | Aprobado |
+| CP-08 | Intentar reservar una mesa ocupada | El sistema debe impedir la reserva | El sistema impidió seleccionar la mesa ocupada | Aprobado |
+| CP-09 | Ingresar datos inválidos | El sistema debe rechazar información inválida | Los datos inválidos fueron rechazados | Aprobado |
+| CP-10 | Consultar mis reservas | La reservación creada debe aparecer | La reservación apareció correctamente | Aprobado |
+| CP-11 | Cancelar reservación | El usuario debería poder cancelar una reserva | La funcionalidad no se encuentra implementada en esta versión | Pendiente |
+
+## Métricas
+
+- Casos de prueba ejecutables: 4
+- Casos aprobados: 4
+- Casos pendientes: 1
+- Tasa de aprobación de pruebas ejecutables: 100%
+
+## Hallazgos
+
+Durante las pruebas no se identificaron errores funcionales en las funcionalidades disponibles.
+
+Se identificó como mejora pendiente la implementación de la cancelación de reservaciones. Esta funcionalidad permanecerá registrada en el backlog para una futura iteración.
+
+## Cierre
+
+El flujo principal de creación y consulta de reservaciones fue validado satisfactoriamente.
