@@ -1,0 +1,155 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+body{
+
+    background:#F5F5F5;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#8E1F1F;
+    color:white;
+
+    padding:35px 25px;
+
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+
+}
+
+header h2{
+
+    font-size:28px;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    padding:25px;
+    padding-bottom:120px;
+
+}
+
+/* ===========================
+   TARJETAS
+=========================== */
+
+.cardReserva{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.cardReserva h3{
+
+    color:#8E1F1F;
+
+    margin-bottom:12px;
+
+}
+
+.cardReserva p{
+
+    margin:8px 0;
+
+    color:#555;
+
+}
+
+.sinReservas{
+
+    text-align:center;
+
+    margin-top:80px;
+
+    color:#888;
+
+}
+
+.sinReservas i{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+    color:#BBBBBB;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    background:white;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    padding:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+}
+
+nav a{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#888;
+
+    text-decoration:none;
+
+}
+
+nav i{
+
+    font-size:22px;
+
+}
+
+.activo{
+
+    color:#8E1F1F;
+
+}

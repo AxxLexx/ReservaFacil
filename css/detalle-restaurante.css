@@ -1,0 +1,192 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+body{
+
+    background:#F5F5F5;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#8E1F1F;
+
+    color:white;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+#volver{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#8E1F1F;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+header h2{
+
+    font-size:24px;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    padding:25px;
+
+    padding-bottom:50px;
+
+}
+
+/* ===========================
+   IMAGEN
+=========================== */
+
+.imagenPrincipal{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   TARJETA
+=========================== */
+
+.informacion{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.informacion h1{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.calificacion{
+
+    color:#F4B400;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.datos{
+
+    margin-bottom:25px;
+
+}
+
+.datos p{
+
+    margin-bottom:12px;
+
+    color:#444;
+
+    font-size:16px;
+
+}
+
+.informacion h3{
+
+    margin-bottom:12px;
+
+    color:#8E1F1F;
+
+}
+
+#descripcion{
+
+    line-height:1.6;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+#reservar{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#8E1F1F;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#reservar:hover{
+
+    background:#6E1717;
+
+    transform:translateY(-2px);
+
+}

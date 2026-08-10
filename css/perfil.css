@@ -1,0 +1,221 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+body{
+
+    background:#F5F5F5;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#8E1F1F;
+
+    color:white;
+
+    padding:35px 25px;
+
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+
+}
+
+header h2{
+
+    font-size:28px;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    padding:30px;
+
+    padding-bottom:120px;
+
+}
+
+/* ===========================
+   PERFIL
+=========================== */
+
+.perfil{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.avatar{
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    background:#8E1F1F;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    margin:auto;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.perfil h2{
+
+    margin-bottom:8px;
+
+}
+
+.perfil p{
+
+    color:#777;
+
+}
+
+/* ===========================
+   ESTADÍSTICAS
+=========================== */
+
+.estadisticas{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+.estadisticas h3{
+
+    font-size:40px;
+
+    color:#8E1F1F;
+
+    margin-bottom:10px;
+
+}
+
+.estadisticas p{
+
+    color:#777;
+
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+#cerrarSesion{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#8E1F1F;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    background:white;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    padding:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+}
+
+nav a{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#888;
+
+    text-decoration:none;
+
+}
+
+nav i{
+
+    font-size:22px;
+
+}
+
+.activo{
+
+    color:#8E1F1F;
+
+}

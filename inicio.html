@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reserva Fácil | Inicio</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/inicio.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+    <div class="saludo">
+
+        <div>
+
+            <h2 id="nombreUsuario">Hola 👋</h2>
+
+            <p>Encuentra tu restaurante favorito</p>
+
+        </div>
+
+        <div class="logout" id="cerrarSesion">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+
+        <!-- Barra de búsqueda -->
+
+        <div class="buscador">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Buscar restaurante...">
+
+        </div>
+
+        <!-- Título -->
+
+        <section class="titulo">
+
+            <h3>Restaurantes populares</h3>
+
+        </section>
+
+        <!-- Tarjetas -->
+
+        <section
+            class="contenedor-restaurantes"
+            id="contenedorRestaurantes">
+
+        </section>
+
+    </main>
+
+    <!-- Barra inferior -->
+
+    <nav>
+
+    <a href="inicio.html" class="activo">
+
+        <i class="fa-solid fa-house"></i>
+
+        Inicio
+
+    </a>
+
+    <a href="mis-reservas.html">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        Reservas
+
+    </a>
+
+    <a href="perfil.html">
+
+        <i class="fa-solid fa-user"></i>
+
+        Perfil
+
+    </a>
+
+</nav>
+
+    <script src="js/storage.js"></script>
+    <script src="js/inicio.js"></script>
+
+</body>
+
+</html>
