@@ -69,3 +69,30 @@ Se identificó como mejora pendiente la implementación de la cancelación de re
 ## Cierre
 
 El flujo principal de creación y consulta de reservaciones fue validado satisfactoriamente.
+
+## Análisis de seguridad inicial
+
+Durante el sprint se realizó una inspección del almacenamiento utilizado por la aplicación mediante las herramientas de desarrollo del navegador.
+
+Se identificaron las siguientes claves en LocalStorage:
+
+- usuarios
+- reservas
+- usuarioActivo
+- restauranteSeleccionado
+
+La inspección permitió comprobar que la aplicación almacena información de usuarios y reservaciones directamente en el navegador.
+
+### Hallazgos
+
+**SEC-01 — Almacenamiento de credenciales en texto plano**
+
+Se identificó que las credenciales se almacenan directamente en el almacenamiento local del navegador. Esto representa un riesgo alto debido a que la información puede ser consultada mediante las herramientas de desarrollo.
+
+**SEC-02 — Almacenamiento de reservaciones en el cliente**
+
+Se identificó que las reservaciones se almacenan directamente en LocalStorage. Esto permite que la información sea consultada y potencialmente modificada desde el entorno del cliente.
+
+### Acción correctiva
+
+Los hallazgos serán tratados durante el Sprint 3 mediante mejoras en la protección de credenciales, validación de datos y controles de acceso. Debido a que la aplicación actual utiliza una arquitectura exclusivamente del lado del cliente, se documentará como limitación que una solución completa requeriría un backend y almacenamiento seguro del lado del servidor.
