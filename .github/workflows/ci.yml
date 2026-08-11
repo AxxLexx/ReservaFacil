@@ -1,0 +1,41 @@
+name: ReservaFácil CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validar-proyecto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Verificar estructura del proyecto
+        run: |
+          echo "Verificando estructura de ReservaFácil..."
+
+          test -f index.html
+          test -f inicio.html
+          test -d css
+          test -d js
+
+          echo "Estructura básica verificada correctamente."
+
+      - name: Verificar archivos JavaScript principales
+        run: |
+          test -f js/storage.js
+          test -f js/login.js
+          test -f js/registro.js
+          test -f js/mesa.js
+
+          echo "Archivos JavaScript principales encontrados."
+
+      - name: Finalizar validación
+        run: |
+          echo "ReservaFácil CI finalizado correctamente."
